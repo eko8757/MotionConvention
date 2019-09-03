@@ -14,6 +14,7 @@ import android.transition.TransitionInflater
 import com.eko8757.motionconvention.R
 import com.eko8757.motionconvention.adapter.RecyclerAdapter
 import com.eko8757.motionconvention.common.*
+import com.eko8757.motionconvention.invisible
 import com.eko8757.motionconvention.listener.BottomNavigationViewListener
 import com.eko8757.motionconvention.model.DataProvider
 import kotlinx.android.synthetic.main.fragment_recycler.*
@@ -100,7 +101,7 @@ class RecyclerFragment : BaseFragment(), View.OnClickListener {
         val copy = view.copyViewImage()
         copy.y += toolbar.height
         root.addView(copy)
-        view.visibility = View.INVISIBLE
+        view.invisible()
         startAnimation(copy, fragmentTransaction)
     }
 

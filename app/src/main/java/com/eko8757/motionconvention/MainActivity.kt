@@ -20,9 +20,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationViewListener {
 
     private fun setupFragment(fragment: Fragment) {
         supportFragmentManager.findFragmentById(R.id.fragment_container)
-            ?: fragment.let {
-                replaceFragmentInActivity(it, R.id.fragment_container)
-            }
+            ?: replaceFragmentInActivity(fragment, R.id.fragment_container)
     }
 
     override fun hideBottomNavigationView() {
