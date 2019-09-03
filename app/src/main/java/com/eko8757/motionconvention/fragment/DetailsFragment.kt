@@ -105,6 +105,9 @@ class DetailsFragment : BaseFragment(), OnBackPressedListener {
         }
     }
 
+
+
+
     override fun onBackPressed() {
         animateViewsOut()
     }
