@@ -56,6 +56,10 @@
             app:layout_constraintStart_toStartOf="@+id/guideline_0"
             app:layout_constraintTop_toTopOf="@+id/tv_title_amount" />
 
+
+
+
+
         <TextView
             android:id="@+id/tv_title_status"
             android:layout_width="wrap_content"
